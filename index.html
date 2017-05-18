@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Created by Nikolay Rudnichenko -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Test template w-m.ru</title>
+	
+	<!-- Google fonts here -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&amp;subset=cyrillic" rel="stylesheet">
+
+	<!-- Bootstrap slider here -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.0/css/bootstrap-slider.min.css">
+	<!-- Bootstrap CSS here -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+	<!-- Template CSS here -->
+	<link rel="stylesheet" href="main-style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 justify-content-center">
+					<nav class="navbar navbar-toggleable-md navbar-light">
+						<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="#personal-info">Личная информация</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#experience">Опыт</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#js">JavaScript</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#about">О себе</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="questionnaire">
+		<div class="container">
+			<form action="send.php" method="post">
+				<div class="row">
+					<h1 class="col-12">Анкета</h1>
+				</div>
+				<div id="personal-info" class="personal-info row">
+					<div class="col-12">
+						<div class="row">
+							<div class="col-12">
+								<h2>Личная информация</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<input type="text" class="form-control offset-2 col-8" placeholder="ФИО" required>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<select class="custom-select" id="inlineFormCustomSelect">
+									<option value="" hidden selected>Год рождения</option>
+									<option value="1990">1990</option>
+									<option value="1991">1991</option>
+									<option value="1992">1992</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<input type="text" class="form-control offset-2 col-8" placeholder="Место проживания" required>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<input type="text" class="form-control offset-2 col-8" placeholder="Skype" required>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<input type="email" class="form-control offset-2 col-8" placeholder="E-mail" required>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="experience" class="experience row">
+					<div class="col-12">
+						<div class="row">
+							<div class="col-12">
+								<h2>Расскажите о своем опыте</h2>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12 col-md-4">
+								<div class="form-check">
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="option1">БЭМ/OOCSS
+									</label>
+								</div>			
+								<div class="form-check">
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="option2">Stylus/LESS/SASS
+									</label>
+								</div>
+								<div class="form-check">
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="option3">Работаю с SVG
+									</label>
+								</div>
+							</div>
+
+							<div class="col-12 col-md-4">
+								<div class="form-check">
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="option4">Верстаю семантично
+									</label>
+								</div>
+								<div class="form-check">
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="option5">ES2015/ES2016
+									</label>
+								</div>
+								<div class="form-check">
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="option6">Gulp/GRUNT
+									</label>
+								</div>
+							</div>
+
+							<div class="col-12 col-md-4">
+								<div class="form-check">
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="option7">Webpack
+									</label>
+								</div>
+								<div class="form-check">
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="option8">jQuery
+									</label>
+								</div>
+								<div class="form-check">
+									<label class="form-check-label">
+										<input class="form-check-input" type="checkbox" value="option9">Ипользую Git
+									</label>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+
+				<div id="js" class="js row">
+					<div class="col-12">
+						<h2>Уровень владения JavaScript</h2>
+						<input type="text" class="js-slider" data-provide="slider"
+							data-slider-ticks="[1, 2, 3, 4]"
+							data-slider-ticks-labels='["Не владею", "Плохо", "Средне", "Профи"]'
+							data-slider-min="1"
+							data-slider-max="4"
+							data-slider-step="1"
+							data-slider-value="4"
+							data-slider-tooltip="hide"
+						>
+					</div>
+				</div>
+
+				<div id="about" class="about row">
+					<div class="col-12">
+						<h2>Расскажите о себе</h2>
+						<p>Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</p>
+						<textarea rows="7" cols="62" placeholder="Понравилась тем, что..."></textarea>
+					</div>
+				</div>
+
+				<div class="submit row">
+					<div class="col-12">
+						<button type="submit" class="btn btn-primary">Готово</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<!-- jQuery first, then Tether, then Bootstrap JS, then Bootstrap slider JS, then main JS file -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.0/bootstrap-slider.min.js"></script>
+
+	<script src="main.js"></script>
+</body>
+</html>
